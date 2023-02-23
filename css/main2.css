@@ -1,0 +1,20 @@
+.landing{
+    background-image: url("../images/bg_3.jpg.webp");
+    min-height: 90vh;
+}
+
+.feature .container{
+    padding: 150px 0;
+}
+
+.landing .container .links a{
+    padding: 5px 0;
+    margin: 0 5px;
+    border-bottom: 1px solid #c49b63;
+}
+.landing .container .links a:nth-last-child(1){
+    color: grey;
+}
+.landing .l-c{
+    padding-top: 200px;
+}

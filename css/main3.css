@@ -1,0 +1,221 @@
+.article .container{
+    padding: 150px 0;
+    display: flex;
+    gap: 40px;
+}
+
+.article .container >.content{
+    width: 70%;
+}
+
+.article .container .content .box{
+    margin-bottom: 20px;
+}
+h1,h3,h2{
+    color: white;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.article .container .content .box p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.article .container .content .box img{
+    margin: 20px 0;
+    max-width: 100%;
+}
+.article .container .content .box ul,
+aside .tags{
+    display: flex;
+    gap: 10px;
+    margin: 50px 0;
+}
+.article .container .content .box ul li a,
+aside .tags li a{
+    font-size: 11px;
+    color: gray;
+    padding: 10px;
+    border: 1px solid #c49b63;
+    border-radius: 7px;
+}
+.article .container .content .box ul li a:hover,
+aside .tags li a:hover{
+    border-color: transparent;
+}
+.article .container .content .chef{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.article .container .content .chef img{
+    width: 150px;
+}
+
+.article .container .content .chef .text p{
+    font-size: 17px;
+}
+
+.comm li{
+    margin: 30px 0;
+}
+.comm >li:nth-last-of-type(1){
+    margin: 100px 0;
+}
+.comm li .content{
+    display: flex;
+    gap: 20px;
+}
+.comm li img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.comm li .text span{
+    font-size:15px;
+    color: rgb(204, 204, 204);
+}
+.comm li .text p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.comm li .text a{
+    font-size: 10px;
+    background-color:#141414;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+.comm li .text a:hover{
+    background-color: black;
+}
+.comments form *{
+    background-color: transparent;
+    color: wheat;
+    display: block;
+}
+.comments form label{
+    color: gray;
+    font-size: 16px;
+}
+.comments form input,
+.comments form textarea{
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+    font-size: 25px;
+    border: none;
+    border-bottom: 1px solid #272727;
+}
+.comments form input[type="submit"]{
+    width: fit-content;
+    font-size: 15px;
+    padding: 20px 25px;
+    background-color: #c49b63;
+    color: #272727;
+    border: 1px solid #c49b63;
+}
+.comments form input[type="submit"]:hover{
+    background-color: transparent;
+    color: #c49b63;
+    cursor: pointer;
+}
+
+/* ------------------  */
+
+aside{
+    width: 30%;
+    padding: 0 10px;
+}
+aside .serch{
+    position: relative;
+    margin-bottom: 50px;
+}
+aside .serch input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #272727;
+    padding: 20px 0;
+    font-size: 16px;
+    color: white;
+}
+aside .serch i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%,-50%);
+}
+
+aside .category li a{
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #bebebe;
+}
+aside .category li a:hover{
+    color: white;
+}
+a{
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+
+
+aside .blog{
+    margin: 50px 0;
+}
+aside .blog .content .box{
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    font-family:"Josefin Sans", Arial, sans-serif;
+    align-items: flex-start;
+}
+
+aside .blog .content img{
+    width: 75px;
+    height: 75px;
+    margin: 0 !important;
+}
+aside .blog .content .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside .blog .content .text a{
+    color:gray;
+    font-size: 16px;
+}
+
+aside .blog .content a:hover{
+    color: #c49b63;
+}
+
+aside .tag{
+    margin: 100px 0;
+}
+aside .tags{
+    flex-wrap: wrap;
+    margin: 0;
+}
+aside .tags li{
+    margin: 5px 0;
+}
+aside .paragraph p{
+    font-size: 16px;
+}
+
+@media(max-width:968px){
+    .article .container{
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    .article .container >.content,
+    .article .container aside{
+        width: 100%;
+    }
+}
